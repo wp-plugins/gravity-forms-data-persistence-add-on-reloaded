@@ -3,7 +3,7 @@ Contributors: unclhos
 Tags: gravity, form, data, field, persistence, add-on, addon, plugin, plug-in, extension
 Requires at least: 2.9.2
 Tested up to: 3.9.1
-Stable tag: 3.1
+Stable tag: 3.1.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -28,7 +28,8 @@ Our plugin resolves this issue. Simple!
 <h4>Installation</h4>
 
 1. Upload extracted folder to the `/wp-content/plugins/` directory
-1. Activate the plugin through the 'Plugins' menu in WordPress
+2. Activate the plugin through the 'Plugins' menu in WordPress
+3. Choose the required persistent settings on the individual form settings page.
 
 == Frequently Asked Questions ==
 
@@ -41,6 +42,9 @@ No, this is an absolutely free add-on.
 We don't provide a dedicated support, but we will try our best to reply you back.
 
 == Changelog ==
+
+= 3.1.1 =
+1. Added persistent data call has been added to the first page only. 
 
 = 3.1 =
 1. Updated hook for javascript to work where form settings were moved to.

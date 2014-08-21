@@ -4,7 +4,7 @@
   Plugin URI: http://asthait.com
   Description: This is a <a href="http://www.gravityforms.com/" target="_blank">Gravity Form</a> plugin. A big limitation with Gravity Form is, in case of big multipage forms, if you close or refresh the page during somewhere midle of some step. all the steps data will loose. this plugin solves that problem. This is an updated version of asthait's plugin.
   Author: Robert Iseley
-  Version: 3.1
+  Version: 3.1.2
   Author URI: http://www.robertiseley.com
   Orginal Plugin by: asthait
  */
@@ -26,10 +26,13 @@ add_filter("gform_pre_render", "ri_pre_populate_the_form");
 
 function ri_pre_populate_the_form($form) {
     if ($form['isPersistent']) {
-        $option_key = ri_getFormOptionKeyForGF($form);
-        if (get_option($option_key)) {
-            $_POST = json_decode(get_option($option_key), true);
-        }
+		$current_page = GFFormDisplay::get_current_page($form["id"]);
+		if ($current_page == 1) {
+			$option_key = ri_getFormOptionKeyForGF($form);
+			if (get_option($option_key)) {
+				$_POST = json_decode(get_option($option_key), true);
+			}
+		}
     }
 
 
