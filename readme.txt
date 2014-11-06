@@ -3,7 +3,7 @@ Contributors: unclhos
 Tags: gravity, form, data, field, persistence, add-on, addon, plugin, plug-in, extension
 Requires at least: 2.9.2
 Tested up to: 3.9.1
-Stable tag: 3.1.1
+Stable tag: 3.2.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -43,8 +43,13 @@ We don't provide a dedicated support, but we will try our best to reply you back
 
 == Changelog ==
 
+= 3.2.0 =
+1. Added ajax save on 10 second timer. Will add custom timer in future. Sponsored by Letterquick.com
+2. Add a "No Persist" setting for form feilds. Found under the "Advanced" tab for each fields settings. Sponsored by Letterquick.com
+3. Changed variable names for uniformity. Still calling old variables for upgrade compatiblity.
+
 = 3.1.1 =
-1. Added persistent data call has been added to the first page only. 
+1. Persistent data call has been added to the first page only. 
 
 = 3.1 =
 1. Updated hook for javascript to work where form settings were moved to.
