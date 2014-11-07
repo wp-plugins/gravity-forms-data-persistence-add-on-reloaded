@@ -43,7 +43,7 @@ We don't provide a dedicated support, but we will try our best to reply you back
 
 == Changelog ==
 
-=3.2.1 =
+= 3.2.1 =
 1. Fixed backward compatibiltiy bug with multiple entries feature.
 
 = 3.2.0 =
