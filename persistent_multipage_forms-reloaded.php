@@ -9,7 +9,7 @@
   Orginal Plugin by: asthait
  */
 
-define('GFDPVERSION', '3.2');
+define('GFDPVERSION', '3.2.1');
 
 add_action('wp_head', 'ri_gfdp_version_head');
 function ri_gfdp_version_head() {
@@ -164,9 +164,16 @@ function ri_set_post_content($entry, $form) {
             $entry_option_key = ri_getEntryOptionKeyForGF($form);
             if (get_option($entry_option_key)) {
                 //Delete old entry from GF tables
-                if (!$form['isEnableMulipleEntry'] || !$form['ri_gfdp_multiple_entries']) {
-                   RGFormsModel::delete_lead(get_option($entry_option_key));
-                }  
+				if(isset($form['ri_gfdp_persist'])) {
+					
+					if (!$form['ri_gfdp_multiple_entries']) {
+					   RGFormsModel::delete_lead(get_option($entry_option_key));
+					}  
+				} else {
+					if(!$form['isEnableMulipleEntry']) {
+					   RGFormsModel::delete_lead(get_option($entry_option_key));
+					}
+				}
             }
         }
 

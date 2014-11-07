@@ -2,8 +2,8 @@
 Contributors: unclhos
 Tags: gravity, form, data, field, persistence, add-on, addon, plugin, plug-in, extension
 Requires at least: 2.9.2
-Tested up to: 3.9.1
-Stable tag: 3.2.0
+Tested up to: 4.0
+Stable tag: 3.2.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -42,6 +42,9 @@ No, this is an absolutely free add-on.
 We don't provide a dedicated support, but we will try our best to reply you back.
 
 == Changelog ==
+
+=3.2.1 =
+1. Fixed backward compatibiltiy bug with multiple entries feature.
 
 = 3.2.0 =
 1. Added ajax save on 10 second timer. Will add custom timer in future. Sponsored by Letterquick.com
