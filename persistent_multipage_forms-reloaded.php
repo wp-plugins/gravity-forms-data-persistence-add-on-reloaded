@@ -153,11 +153,10 @@ function ri_set_post_content($entry, $form) {
         if (is_user_logged_in()) {
             $option_key = ri_getFormOptionKeyForGF($form);
 			
-			if($form['isEnablePersistentClear'] || $form['ri_gfdp_persist_clear'])
+			if($form['isEnablePersistentClear'] || $form['ri_gfdp_persist_clear']) 
 				delete_option($option_key);
 			else {
-				parse_str($_POST['form'], $data);
-				$data = ri_gfdp_sanitize_data($data, $form);
+				$data = ri_gfdp_sanitize_data($_POST, $form);
 	            update_option($option_key, json_encode($data));
 			}
 

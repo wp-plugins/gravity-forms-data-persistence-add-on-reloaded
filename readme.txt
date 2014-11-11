@@ -3,7 +3,7 @@ Contributors: unclhos
 Tags: gravity, form, data, field, persistence, add-on, addon, plugin, plug-in, extension
 Requires at least: 2.9.2
 Tested up to: 4.0
-Stable tag: 3.2.1
+Stable tag: 3.2.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -42,6 +42,9 @@ No, this is an absolutely free add-on.
 We don't provide a dedicated support, but we will try our best to reply you back.
 
 == Changelog ==
+
+= 3.2.2 =
+1. Fixed bug on not saving persistence data during submit with “clear” not enabled.
 
 = 3.2.1 =
 1. Fixed backward compatibiltiy bug with multiple entries feature.
