@@ -25,12 +25,25 @@ function ri_gfdp_script_register() {
 // Render persistence data before form output
 add_filter("gform_pre_render", "ri_pre_populate_the_form");
 function ri_pre_populate_the_form($form) {
-    if ($form['isPersistent'] || $form['ri_gfdp_persist']) {
+    if (!empty($form['isPersistent']) || !empty($form['ri_gfdp_persist'])) {
 		$current_page = GFFormDisplay::get_current_page($form["id"]);
 		if ($current_page == 1) {
 			$option_key = ri_getFormOptionKeyForGF($form);
 			if (get_option($option_key)) {
 				$_POST = json_decode(get_option($option_key), true);
+				foreach($form['fields'] as $field) {
+		            if(rgar($field, "allowsPrepopulate")){
+		                if(is_array(rgar($field, "inputs"))){
+		                    foreach($field["inputs"] as $input) {
+								if(!empty($_GET[$input['name']]))
+								$_POST['input_'.str_replace('.','_',$input['id'])] = $_GET[$input['name']];
+							}
+						} else {
+							if(!empty($_GET[$field['inputName']]))
+							$_POST['input_'.$field['id']] = $_GET[$field['inputName']];
+						}
+					}
+				}
 			}
 		}
     }	
