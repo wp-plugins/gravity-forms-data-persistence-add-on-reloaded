@@ -6,6 +6,7 @@ Tested up to: 4.0
 Stable tag: 3.2.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=W9FEL3T4BHTPU&lc=US&no_note=0&cn=Add%20special%20instructions%20to%20the%20seller%3a&no_shipping=1&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHosted
 
 This plugin makes your Gravity Forms data-persistent.
 
@@ -13,14 +14,18 @@ This plugin makes your Gravity Forms data-persistent.
 
 Consider this scenario:
 
-a) Your site uses multipage <a href="http://www.gravityforms.com/" target="_blank">Gravity Forms</a>.
-b) Your user logs in to the site and starts filling up a 5-step form.
-c) During the 3rd step, the user leaves without completely finishing the form.
-d) Some days later, the user comes back and logs in to see that his inputs are all gone!
+1. Your site uses multipage <a href="http://www.gravityforms.com/" target="_blank">Gravity Forms</a>.
+2. Your user logs in to the site and starts filling up a 5-step form.
+3. During the 3rd step, the user leaves without completely finishing the form.
+4. Some days later, the user comes back and logs in to see that his inputs are all gone!
 
 This happens because Gravity Forms by default does not save partially submitted forms.
 
 Our plugin resolves this issue. Simple!
+
+= New Features =
+1. Data can be saved automatically every 10 seconds via AJAXs.
+2. Disable persistence on a per field bases. Good for sensitive information you don't want saved.
 
 == Installation ==
 
@@ -40,6 +45,11 @@ No, this is an absolutely free add-on.
 = Do you have any client support? =
 
 We don't provide a dedicated support, but we will try our best to reply you back.
+
+== Screenshots ==
+
+1. This is a screenshot from the *FORM SETTINGS* page. This is where you activated persistence to work with each form. 
+2. This is a screenshot from the *FORM FIELD ADVANCE* settings *tab*. This will allow you to disable persistence on a per field bases.
 
 == Changelog ==
 
