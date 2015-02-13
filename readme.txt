@@ -14,10 +14,10 @@ This plugin makes your Gravity Forms data-persistent.
 
 Consider this scenario:
 
-1. Your site uses multipage <a href="http://www.gravityforms.com/" target="_blank">Gravity Forms</a>.
-2. Your user logs in to the site and starts filling up a 5-step form.
-3. During the 3rd step, the user leaves without completely finishing the form.
-4. Some days later, the user comes back and logs in to see that his inputs are all gone!
+a) Your site uses multipage <a href="http://www.gravityforms.com/" target="_blank">Gravity Forms</a>.
+b) Your user logs in to the site and starts filling up a 5-step form.
+c) During the 3rd step, the user leaves without completely finishing the form.
+d) Some days later, the user comes back and logs in to see that his inputs are all gone!
 
 This happens because Gravity Forms by default does not save partially submitted forms.
 
@@ -45,6 +45,7 @@ No, this is an absolutely free add-on.
 = Do you have any client support? =
 
 We don't provide a dedicated support, but we will try our best to reply you back.
+If there is a specific feature you would like to sponsor, you can email me directly at: me at robertiseley dot com
 
 == Screenshots ==
 
